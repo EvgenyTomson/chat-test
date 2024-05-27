@@ -1,0 +1,111 @@
+.form {
+  position: relative;
+  max-width: 100%;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.text {
+  box-sizing: border-box;
+  flex-grow: 1;
+  padding: 0.4em 0.8em;
+  font-size: 1.6em;
+  scrollbar-width: none;
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 12px;
+  resize: none;
+}
+
+.text::-webkit-scrollbar {
+  display: none;
+}
+
+.text:focus {
+  border: 1px solid #646cff;
+}
+
+.text::placeholder {
+  color: darkgrey;
+}
+
+.button {
+  padding: 1.4em 0.8em;
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 1em;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover,
+button:active {
+  border-color: #646cff;
+}
+
+.form .tooltiptext {
+  visibility: hidden;
+  width: 50%;
+  font-size: 14px;
+  color: inherit;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -6px;
+  left: 25%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.form:hover .tooltiptext,
+.form:active .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 680px) {
+  .form {
+    padding: 12px;
+    flex-direction: column;
+  }
+
+  .text {
+    font-size: 1.4em;
+    width: 100%;
+  }
+
+  .avatar {
+    display: none;
+  }
+
+  .button {
+    padding: 1.2em 0.8em;
+    width: 100%;
+  }
+
+  .form .tooltiptext {
+    font-size: 12px;
+    top: -18px;
+  }
+}
+
+@media (max-width: 380px) {
+  .form .tooltiptext {
+    font-size: 8px;
+    top: -12px;
+  }
+}

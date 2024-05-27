@@ -1,0 +1,104 @@
+.message {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  gap: 12px;
+}
+
+.time {
+  font-size: 12px;
+  text-align: center;
+  color: gray;
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.authorName {
+  font-size: 16px;
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.body {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: var(--massage-bg-color);
+}
+
+.text {
+  font-size: 14px;
+  word-break: break-all;
+  white-space: normal;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 6px;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.oval {
+  font-size: 14px;
+}
+
+.quoteAuthor {
+  font-weight: 500;
+  word-break: break-all;
+  white-space: normal;
+}
+
+.quoteText {
+  font-size: 12px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+@media (max-width: 680px) {
+  .time {
+    font-size: 10px;
+  }
+
+  .authorName {
+    font-size: 14px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+  .quoteAuthor {
+    font-size: 12px;
+  }
+
+  .quoteText {
+    font-size: 10px;
+  }
+
+  .avatar {
+    width: 48px;
+    height: 48px;
+  }
+}

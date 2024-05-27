@@ -1,0 +1,17 @@
+.list {
+  max-width: 100%;
+  padding: 24px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  list-style: none;
+}
+
+@media (max-width: 680px) {
+  .list {
+    padding: 12px;
+    margin-bottom: 12px;
+    gap: 12px;
+  }
+}
